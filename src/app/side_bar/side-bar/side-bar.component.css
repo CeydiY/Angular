@@ -1,0 +1,21 @@
+:host {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: #922211;
+}
+:host.is-open {
+  display: block;
+}
+.img_side_bar{
+  height: 200px;
+  width: 325px;
+  margin: auto;
+}
+.body_side-bar{
+  background: #922211;
+}
