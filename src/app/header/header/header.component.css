@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+.divHeader{
+  background-color: #DB4044;
+}
+.circle{
+  width: 30px;
+  height: 30px;
+  border: #DB4044;
+  border-radius: 50%;
+  margin: 5px;
+}

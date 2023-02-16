@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <app-header></app-header>
+  <div class="row mt-5">
+    <div class="col-12">
+      <div id="history">
+        <div class="row mb-5">
+          <h1 class="text-center"><i class="fa-solid fa-bookmark"></i> History</h1>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <img class="img_history_body" src="assets/img/body/history/Criminal-Minds.png" alt="Criminal Minds">
+          </div>
+          <div class="col-12 col-md-5 col-lg-5">
+            <p [class]="p_body" class="texto_p_body">Criminal Minds is an American police procedural crime drama television series created and produced by Jeff Davis.<br>
+              The series premiered on CBS on September 22, 2005, and originally concluded on February 19, 2020; it was revived in 2022.<br>
+              It follows a group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU),
+              using behavioral analysis and profiling to investigate crimes and find the unsub (unknown subject), the team's term for perpetrators.<br>
+              The show tells the story of the team as they work various cases and tackle their personal struggles.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-md-1 col-lg-1"></div>
+          <div class="col-12 col-md-5 col-lg-5">
+            <p [class]="p_body" class="texto_p_body_evolution">
+              The sixteenth season of the American police procedural crime drama television series Criminal Minds, subtitled Evolution, follows members of the Behavioral Analysis Unit (BAU) as they are faced with a network of serial killers built during the COVID-19 pandemic.<br>
+              It is a revival of the 2005 television series, which ended in 2020. The season premiered on November 24, 2022 on Paramount+ in the U.S. and on Disney+ in other regions on November 25, 2022.
+            </p>
+          </div>
+          <div class="col-12 col-md-1 col-lg-1"></div>
+          <div class="col-12 col-md-5 col-lg-5">
+            <img class="img_history_body_evolution" src="assets/img/body/history/evolution.jpg" alt="Criminal Minds">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row_table_body">
+    <div class="col-12">
+      <div id="characters">
+        <div class="row">
+          <h1 class="text-center"><i class="fa-solid fa-clapperboard"></i> Characters</h1>
+        </div>
+        <table class="table table-danger table-striped mt-5">
+          <thead>
+          <tr>
+            <th colspan="4" class="text-center h4"><strong>Main characters</strong></th>
+          </tr>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Alias</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let name of Name; index as i;">
+            <th scope="row">{{i+1}}</th>
+            <td>{{name}}</td>
+            <td>{{lastName[i]}}</td>
+            <td>{{alias[i]}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+
+
